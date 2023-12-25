@@ -1,4 +1,84 @@
-<!DOCTYPE html>
-<html lang="ru">
-    <!-- Ваше решение -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ-02</title>
+
+    <style>
+        .header{
+            background-color: red;
+            color: #FFF;
+            display: block;
+            position: relative;
+            text-align: center;
+
+        }
+
+        .header__nav{
+            background-color: orange;
+            display: block;
+        }
+        .header__a{
+            color: #FFF;
+        }
+
+        .main{
+            background-color: green;
+            color:#FFF;
+            padding: 5px;
+        }
+
+        .block-1{
+            margin-bottom: 5px;
+            background-color: blue;
+        }
+        .block-2{
+            background-color: blue;
+        }
+
+        .footer{
+            text-align: center;
+            background-color: blueviolet;
+            color: #FFF;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Header</h1>
+        <nav class="header__nav">
+            <a href="" class="header__a">Nagivagation 1</a>
+            <a href="" class="header__a">Nagivagation 2</a>
+            <a href="" class="header__a">Nagivagation 3</a>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <article class="block-1">
+            <h2>Article 1</h2>
+            <ul class="block-1__list">
+                <li class="block-1__point">Оригинальная трилогия</li>
+                <li class="block-1__point">Трилогия приквелов</li>
+                <li class="block-1__point">Трилогия сиквелов</li>
+            </ul>
+        </article>
+
+        <article class="block-2">
+            <h2>Article 3</h2>
+            <ol class="block-2__list">
+                <li class="block-2__point">Эпизод IV — Новая надежда</li>
+                <li class="block-2__point">Эпизод V — Империя наносит ответный удар</li>
+                <li class="block-2__point">Эпизод VI — Возвращение джедая</li>
+            </ol>
+        </article>
+    </main>
+
+    <footer class="footer">
+        Footer
+    </footer>
+    
+</body>
 </html>
