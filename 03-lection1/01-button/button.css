@@ -1,22 +1,19 @@
 /* Стилизация кнопки */
 
-.main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 button[class^='main__button']{
     border-radius: 8px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Roboto', sans-serif;;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    padding: 10px 30px;
+    line-height: normal;
+    padding: 15px 65.58px 14px 66.42px;
+    text-wrap: nowrap;
 }
-button[class$='_disabled']:disabled{
+button:disabled{
     opacity: 0.5;
+    pointer-events: none;
 }
 
 .main__button-primary{
