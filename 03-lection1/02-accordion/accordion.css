@@ -2,25 +2,25 @@
 .accordion{
     display: block;
 }
-.accordion-item{
-    border: 1px solid #474747;
-    border-radius: 10px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    margin-bottom: 10px;
+.accordion__item{
+    border: 1px solid #ACB5BD;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 8px;
+    padding: 24px 32px 24px 32px;
 
 }
-.accordion-item__title::marker {  
+.accordion__title::marker {  
     content: "";
 }
-
-.accordion-item__title::after{
-    content: url(public/images/accordion-close-img.svg);
-    margin-left: 50px;
+.accordion__content{
+    color: #495057;
+    font-family:'Inter', sans-serif;
+    margin-top: 16px;
+    margin-bottom: 8px;
 }
-
-.accordion-item[open] > .accordion-item__title::after{
-    content: url(public/images/accordion-open-img.svg);
-    margin-left: 50px;
+.accordion__title{
+    font-family:'Inter', sans-serif;
 }
