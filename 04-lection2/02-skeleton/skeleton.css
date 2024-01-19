@@ -1,11 +1,5 @@
-:root{
-    --linear-gradient: linear-gradient(93deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
-}
 
 .skeleton{
-    display: block;
-    width: 579px;
-    height: 192px; /* почему то блок больше, чем заданные размеры */
     border: 1px solid #ACB5BD;
     padding: 24px 40px 32px 24px;
     box-sizing: border-box;
@@ -21,21 +15,28 @@
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: var(--linear-gradient);
+    background: linear-gradient(93deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
     margin-right: 16px;
 }
-.skeleton__up{
-    background: var(--linear-gradient);
-    width: 172px;
-    height: 20px;
-    flex-shrink: 0;
-    margin-bottom: 8px;
+.skeleton__info{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
 }
-.skeleton__down{
-    background: var(--linear-gradient);
-    width: 257px;
+.skeleton__line{
+
+    background: linear-gradient(93deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
     height: 20px;
-    flex-shrink: 0;
+}
+.skeleton__line_small{
+    width: 29.7%;
+}
+.skeleton__line_medium{
+    width: 44.38%;
+}
+.skeleton__line_large{
+    width: 100%;
 }
 .skeleton__body{
     display: flex;
@@ -43,14 +44,8 @@
     justify-content: start;
 
 }
-.skeleton__body > div[class^="skeleton__"]{
-    width: 515px;
-    height: 20px;
-    flex-shrink: 0;
-    background: var(--linear-gradient);
-}
 
-.skeleton__upText{
+.skeleton__line_margin{
     margin-bottom: 8px;
 }
 
