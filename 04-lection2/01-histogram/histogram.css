@@ -1,50 +1,38 @@
-:root{
-    --border-color: #ACB5BD;
-    --black: #212429;
-    --bar-color: #4263EB;
 
-}
-h4{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-p{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-
-
-.histogram__container {
+.histogram {
     width: 100%;
-    border: 1px solid var(--border-color);
-    padding: 16px 29px 24px 26px;
+    border: 1px solid #ACB5BD;
+    padding: 16px 24px 24px 26px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     height: 185px;
   }
   .histogram__header {
-    padding: 0;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    color: var(--bar-color);
     font-family: 'Inter', sans-serif;
     margin-bottom: 39px;
   }
 
-  .histogram__header > p{
+  .histogramm__viewAll{
+    color: #4263EB;
     margin-top: 3px;
+    text-decoration: none;
   }
   .histogram__info{
-    margin-bottom: 0;
-    color: var(--black);
+    color: #212429;
   }
-  .total__orders{
+  .histogramm__ordersTitle{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .histogram__totalOrder{
+    margin-bottom: 0;
     margin-top: 6px;
     font-size: 20px;
     line-height: 26px;
@@ -56,9 +44,9 @@ p{
     overflow: hidden;
     min-height: 50px;
   }
-  .bar{
+  .histogram__bar{
     flex-grow: 1;
     margin: 0 1px;
-    background-color: var(--bar-color);
+    background-color: #4263EB;
     width: 9px;
   }
