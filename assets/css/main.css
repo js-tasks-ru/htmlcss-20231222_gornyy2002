@@ -49,15 +49,17 @@ body{
     flex-wrap: wrap;
     padding: 67px 165px 204px 165px;
     gap: 30px;
+    justify-content: center;
 }
 .components__component{
-    flex: 0 1 calc(33.33% - 20px);
+    width: 349.96px;
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
     flex-shrink: 0;
     box-sizing: border-box;
     min-height: 367px;
+    padding: 80px 24px 30px 26px;
     
 
 }
@@ -69,7 +71,6 @@ body{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-bottom: 30px;
     margin-top: 75px;
     
 }
@@ -121,3 +122,59 @@ button[class^='main__button']{
     transition: background 0.3s linear;
     background: #2342C0;
 }
+
+
+
+/*Гисограмма */
+
+.histogram {
+    width: 100%;
+    border: 1px solid #ACB5BD;
+    padding: 16px 24px 24px 26px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 185px;
+  }
+  .histogram__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 39px;
+  }
+
+  .histogramm__viewAll{
+    color: #4263EB;
+    margin-top: 3px;
+    text-decoration: none;
+  }
+  .histogram__info{
+    color: #212429;
+  }
+  .histogramm__ordersTitle{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .histogram__totalOrder{
+    margin-bottom: 0;
+    margin-top: 6px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .histogram__body {
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    min-height: 50px;
+  }
+  .histogram__bar{
+    flex-grow: 1;
+    margin: 0 1px;
+    background-color: #4263EB;
+    width: 9px;
+  }
