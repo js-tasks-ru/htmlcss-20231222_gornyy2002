@@ -1,0 +1,58 @@
+:root{
+    --linear-gradient: linear-gradient(93deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.skeleton{
+    display: block;
+    width: 579px;
+    height: 192px; /* почему то блок больше, чем заданные размеры */
+    border: 1px solid #ACB5BD;
+    padding: 24px 40px 32px 24px;
+    box-sizing: border-box;
+    
+}
+.skeleton__head{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.skeleton__photo{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--linear-gradient);
+    margin-right: 16px;
+}
+.skeleton__up{
+    background: var(--linear-gradient);
+    width: 172px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+}
+.skeleton__down{
+    background: var(--linear-gradient);
+    width: 257px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.skeleton__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+.skeleton__body > div[class^="skeleton__"]{
+    width: 515px;
+    height: 20px;
+    flex-shrink: 0;
+    background: var(--linear-gradient);
+}
+
+.skeleton__upText{
+    margin-bottom: 8px;
+}
+
+
+
