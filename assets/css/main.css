@@ -44,7 +44,94 @@ body{
 .main{
     background-color: #F9FAFC;
 }
-.components{
+
+.componentsTable{
+    position: relative;
+    background: #F9FAFC;
+    padding: 68px 165px 204px 165px;
+    height: 1036px;
+}
+.componentsTable::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #DDE2E5;
+    top: 0;
+    left: 0;
+
+}
+.componentsTable::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #DDE2E5;
+    top: 100%;
+    left: 0;
+}
+.componentsTable__cont{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.compontentsTable__block{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+    position: relative;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 80px 24px 0 26px;
+}
+
+.componentsTable__component{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+
+}
+.compontentsTable__block_padding{
+    padding-top: 20px;
+}
+.componentsTable__calendar{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transform: none;
+}
+
+
+.componentsTable__histogram{
+    position: relative;
+    transform: none;
+    left: 0;
+    bottom: 0;
+}
+
+.componentsTable__title{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: var(--black);
+    text-align: center;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-wrap: nowrap;
+}
+
+
+
+/* .components{
     display: flex;
     flex-wrap: wrap;
     padding: 67px 165px 204px 165px;
@@ -60,6 +147,8 @@ body{
     box-sizing: border-box;
     min-height: 367px;
     padding: 80px 24px 30px 26px;
+    position: relative;
+    text-align: center;
     
 
 }
@@ -72,8 +161,9 @@ body{
     font-weight: 500;
     line-height: normal;
     margin-top: 75px;
+
     
-}
+} */
 
 
 .footer{
@@ -128,13 +218,15 @@ button[class^='main__button']{
 /*Гисограмма */
 
 .histogram {
-    width: 100%;
+    position: relative;
     border: 1px solid #ACB5BD;
     padding: 16px 24px 24px 26px;
     box-sizing: border-box;
+    display: block;
+  }
+  .histogram__cont{
     display: flex;
     flex-direction: column;
-    height: 185px;
   }
   .histogram__header {
     display: flex;
@@ -170,13 +262,13 @@ button[class^='main__button']{
     display: flex;
     align-items: flex-end;
     overflow: hidden;
-    min-height: 50px;
+    height: 50px;
   }
   .histogram__bar{
     flex-grow: 1;
     margin: 0 1px;
     background-color: #4263EB;
-    width: 9px;
+
   }
 
 
@@ -242,4 +334,45 @@ button[class^='main__button']{
 }
 .calendar__day_beetwenFocus{
     background: rgba(160, 177, 245, 0.2);
+}
+
+
+/*tooltip*/
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+.tooltip__text{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #DDE2E5;
+    text-align: center;
+    border-radius: 10px;
+    background: #4263EB;
+    box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+    padding: 13px 21px 8px 21px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: calc(-100% - 5px);
+    transform: translateX(-50%) translateY(-50%);
+    text-wrap: nowrap;
+}
+
+.tooltip__text::after{
+    content: "";
+    position: absolute;
+    border: 12px solid transparent;
+    border-bottom-color:#4263EB;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.tooltip__toogle:hover + .tooltip__text{
+  display: block;
 }
