@@ -29,11 +29,42 @@ body{
 }
 /* Layout */
 .head{
-    padding-top: 96px;
-    padding-left: 160px;
+    padding-top: 16px;
+    padding-bottom: 77px;
 
 }
+
+.head__logo{
+    display: flex;
+    margin-bottom: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+.head__square{
+    background-color: var(--black);
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+}
+.head__circle{
+    background-color: var(--black);
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+.head__triangle{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 32px 0 0 32px;
+    border-color: transparent transparent transparent #212429;
+
+}
+
 .head__title{
+    margin-left: 160px;
     font-family: var(--inter);
     font-size: 50px;
     font-style: normal;
@@ -128,42 +159,6 @@ body{
     line-height: normal;
     text-wrap: nowrap;
 }
-
-
-
-/* .components{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 67px 165px 204px 165px;
-    gap: 30px;
-    justify-content: center;
-}
-.components__component{
-    width: 349.96px;
-    border-radius: 12px;
-    background: #FFF;
-    box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
-    flex-shrink: 0;
-    box-sizing: border-box;
-    min-height: 367px;
-    padding: 80px 24px 30px 26px;
-    position: relative;
-    text-align: center;
-    
-
-}
-
-.components__footer{
-    color: var(--black);
-    text-align: center;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 75px;
-
-    
-} */
 
 
 .footer{
@@ -278,7 +273,6 @@ button[class^='main__button']{
     color:#334D6E;
     padding: 28px 34px 40px 36px;
     height: 312px;
-    border: 1px solid #ACB5BD;
     box-sizing: border-box;
 }
 
@@ -375,4 +369,47 @@ button[class^='main__button']{
 
 .tooltip__toogle:hover + .tooltip__text{
   display: block;
+}
+
+
+
+
+
+
+.avatar{
+    width: 102px;
+}
+
+.avatar__img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+@media (max-width: 376px){
+    .head{
+        padding-top: 16px;
+        padding-bottom: 69px;
+    }
+
+    .head__title{
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 38px;
+    }
+    
+    .componentsTable__cont{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 23px/ 16px;
+        justify-content: center;
+    }
+    
 }
