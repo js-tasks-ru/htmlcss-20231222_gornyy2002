@@ -1,5 +1,4 @@
 .calendar{
-    color:#334D6E;
     padding: 28px 34px 40px 36px;
     border: 1px solid #ACB5BD;
     width: 304px;
@@ -7,6 +6,7 @@
 }
 
 .calendar__title{
+    color: #334D6E;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-style: normal;
