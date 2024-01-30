@@ -370,6 +370,11 @@ button[class^='main__button']{
 .tooltip__toogle:hover + .tooltip__text{
   display: block;
 }
+.tooltip__img{
+    color: var(--black);
+    width: 24px;
+    height: 24px;
+}
 
 
 
