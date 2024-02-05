@@ -4,8 +4,42 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <form action="#" class="radios" method="POST">
+            <h5 class = 'radios__title'>Radio Button</h5>
+            <label for="radio" class="radio">
+                <input type="radio" id="radio" name="radio-name" value="1" class="radio__input">
+                <div class="radio__state">
+                    <div class="radio__control">
+                        <div class="radio__checked"></div>
+                    </div>
+                    <span class="radio__title">Default</span>
+                </div>
+            </label>
+
+            <label for="radio" class="radio">
+                <input type="radio" id="radio" name="radio-name" value="2" class="radio__input" checked>
+                <div class="radio__state">
+                    <div class="radio__control">
+                        <div class="radio__checked"></div>
+                    </div>
+                    <span class="radio__title">Selected</span>
+                </div>
+            </label>
+
+            <label for="radio" class="radio">
+                <input type="radio" id="radio" name="radio-name" value="3" class="radio__input" disabled>
+                <div class="radio__state">
+                    <div class="radio__control">
+                        <div class="radio__checked"></div>
+                    </div>
+                    <span class="radio__title">Disabled</span>
+                </div>
+            </label>
+        </form>
 
     </body>
 </html>
