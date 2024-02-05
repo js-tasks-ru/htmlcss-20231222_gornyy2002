@@ -31,6 +31,15 @@ p{
     margin-bottom: 0;
     padding-bottom: 0;
 }
+input[type = 'checkbox']{
+    margin: 0;
+}
+h5{
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Layout */
 .head{
     padding-top: 16px;
