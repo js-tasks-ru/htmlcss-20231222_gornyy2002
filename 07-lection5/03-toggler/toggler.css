@@ -1,0 +1,96 @@
+body{
+    padding: 20px 50px;
+}
+.toggles{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.toggles{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.toggles__head{
+    color: var(--grey-2);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.toggles__block {
+    display: inline-block;
+}
+
+.toggles__input {
+    position: absolute;
+    left: -100vw;
+}
+
+.toggles__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.toggles__control {
+    width: 52px;
+    height: 28px;
+    border: 1px solid var(--grey-2);
+    border-radius: 26px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 1px;
+}
+
+.toggles__point {
+    width: 24px;
+    height: 24px;
+    background-color: var(--grey-2);
+    border-radius: 50%;
+}
+
+.toggles__title {
+    color: var(--grey-4);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.toggles__title_on{
+    display: none;
+}
+
+.toggles__input:checked ~ .toggles__state .toggles__control {
+    border-color: var(--blue);
+    background-color: var(--blue);
+}
+.toggles__input:checked ~ .toggles__state .toggles__title_on{
+    display: block;
+}
+.toggles__input:checked ~ .toggles__state .toggles__title_off{
+    display: none;
+}
+
+
+.toggles__input:checked ~ .toggles__state .toggles__point {
+    background-color: var(--white);
+    position: relative;
+    left: 24px;
+}
+
+.toggles__input:disabled ~ .toggles__state .toggles__control {
+    background-color: var(--grey-2);
+}
+
+.toggles__input:disabled ~ .toggles__state .toggles__point {
+    background-color: var(--grey-3);
+}
