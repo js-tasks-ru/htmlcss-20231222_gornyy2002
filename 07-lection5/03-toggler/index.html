@@ -4,8 +4,47 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <form action="#" class = 'toggles' method="POST">
+            <h5 class = 'toggles__head'>Toggle Button</h5>
 
+            <label for="toggle_1" class="toggles__block">
+                <input type="checkbox" id="toggle_1" class="toggles__input">
+                <div class="toggles__state">
+                    <div class="toggles__control">
+                        <div class="toggles__point"></div>
+                    </div>
+                    <span class="toggles__title toggles__title_off">Off</span>
+                    <span class="toggles__title toggles__title_on">On</span>
+                </div>
+            </label>
+
+            <label for="toggle_2" class="toggles__block">
+                <input type="checkbox" id="toggle_2" class="toggles__input" checked>
+                <div class="toggles__state">
+                    <div class="toggles__control">
+                        <div class="toggles__point"></div>
+                    </div>
+                    <span class="toggles__title toggles__title_off">Off</span>
+                    <span class="toggles__title toggles__title_on">On</span>
+                </div>
+            </label>
+
+            <label for="toggle_3" class="toggles__block">
+                <input type="checkbox" id="toggle_3" class="toggles__input" disabled>
+                <div class="toggles__state">
+                    <div class="toggles__control">
+                        <div class="toggles__point"></div>
+                    </div>
+                    <span class="toggles__title toggles__title_off">Off</span>
+                    <span class="toggles__title toggles__title_on">On</span>
+                </div>
+            </label>
+        </form>
+        
     </body>
 </html>
